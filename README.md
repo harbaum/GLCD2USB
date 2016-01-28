@@ -33,7 +33,7 @@ The GLCD2USB features 16 firmware configurable interface lines (AVR ports A and 
 You can get all parts in germany from Reichelt or Conrad:
 
  Part | Qty | Name | [Reichelt](http://www.reichelt.de) | [Conrad](http://www.conrad.de) | [Maplin UK](http://www.maplin.co.uk) 
- ---- | ---- | ---- | ---- | ----
+ ---- | ---- | ---- | ---- | ---- | ----
  Q1 | 1 | 16Mhz crystal, HC49U package | 16,0000-HC49U-S | 155145 | RR89W 
  R1 | 1 | 2.2k ohm resistor | 1/4W 2,2k | 403270 | M2K2 
  R2, R3 | 2 | 68 ohm resistor | 1/4W 68 | 403113 | M68R 

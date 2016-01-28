@@ -10,7 +10,7 @@ Every now and then i have spare PCBs (11 Euro each) and flashed and tested CPUs 
 
 ## Hardware
 
- ![](glcd2usb_top.jpg) | ![](glcd2usb_bottom.jpg)
+ ![](images/glcd2usb_top.jpg) | ![](images/glcd2usb_bottom.jpg)
  ---- | ----
 **GLCD2USB without display** | **On pcb V1.1 the USB connector was mounted on the rear PCB side**
 

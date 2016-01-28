@@ -122,9 +122,41 @@ This will install the firmware in the AVRs flash memory. Once the firmware is in
 
 ### Host driver software
 
+#### Example dmesg output
+Using the "dmesg" command on your linux machine you should see an output similar to this, when you plug in the GLCD2USB device :
+```
+[2256973.693080] usb 3-2: new low-speed USB device number 30 using xhci_hcd
+[2256977.137440] usb 3-2: New USB device found, idVendor=1c40, idProduct=0525
+[2256977.137448] usb 3-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[2256977.137453] usb 3-2: Product: GLCD2USB
+[2256977.137457] usb 3-2: Manufacturer: www.harbaum.org/till/glcd2usb
+[2256977.137655] usb 3-2: ep 0x81 - rounding interval to 64 microframes, ep desc says 80 microframes
+[2256980.974769] hid-generic 0003:1C40:0525.0008: hiddev0,hidraw6: USB HID v1.01 Device [www.harbaum.org/till/glcd2usb GLCD2USB] on usb-0000:03:00.0-2/input0
+```
+
+
+#### lcd4linux
 Currently only the SVN version of lcd4linux available [here](http://ssl.bulix.org/projects/lcd4linux/wiki/Howto) supports the GLCD2USB interface. Fetch a copy from SVN as described there and compile and install it. The resulting lcd2linux binary should mention the GLCD2USB interface when invoked with the -l parameter.
 
 The [glcd2usb example configuration](lcd4linux.conf) can be used as a basis for own configurations. Please make sure the tux.png from the lcd4linux package is in the current directory when running this demo config to make sure the little tux is displayed to show the graphic capabilities of the display.
+
+#### LCDproc
+
+You need at least version 0.5.6.
+To get the [current CVS release](http://lcdproc.sourceforge.net/nightly/lcdproc-CVS-current.tar.gz)
+Ensure your LCDd.conf file has the following options set at a minimum.
+
+```
+[server]
+Driver=glcd
+```
+
+```
+[glcd]
+ConnectionType=glcd2usb
+
+Size=128x64
+```
 
 ## Adding support for a new display
 

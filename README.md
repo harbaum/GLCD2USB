@@ -131,4 +131,3 @@ Writing a driver for an unsupported display controller is faily easy if you have
   *   [AVR-USB, software USB for the AVR plattform](http://www.obdev.at/products/avrusb/index.html)
   *   [USB user space library libusb](http://libusb.sourceforge.net/)
   *   [Win32 port of libusb](http://libusb-win32.sourceforge.net/)
-  *   [yaVDR64 using GLCD2USB (german)](http://ingeninge.homelinux.net/ingmar/mms-joomla/index.php/8-mms-s100-und-zenega-news/87-yavdr64-0-4-0-zeigt-auf-glcd2usb-an)

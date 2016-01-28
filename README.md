@@ -142,8 +142,7 @@ The [glcd2usb example configuration](lcd4linux.conf) can be used as a basis for 
 
 #### LCDproc
 
-You need at least version 0.5.6.
-To get the [current CVS release](http://lcdproc.sourceforge.net/nightly/lcdproc-CVS-current.tar.gz)
+You need at least version 0.5.6.    
 Ensure your LCDd.conf file has the following options set at a minimum.
 
 ```

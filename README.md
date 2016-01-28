@@ -24,38 +24,38 @@ Every now and then i have spare PCBs (11 Euro each) and flashed and tested CPUs 
 
 ## Supported display types
 
-The GLCD2USB concept is meant to support various different display types. Currently a version is available to directly attach to some of the popular ks0108 based displays like the Displaytech 64128A (available e.g. from [Reichelt](http://www.reichelt.de)) or the TG12864B (verified to work, available e.g. from [Pollin](http://www.pollin.de)).
+The GLCD2USB concept is meant to support various different display types. Currently a version is available to directly attach to some of the popular ks0108 based displays like the Displaytech 64128A (available e.g. from [Reichelt](http://www.reichelt.de)) or the TG12864B (verified to work, available e.g. from [Pollin](http://www.pollin.de)) or the [Buydisplay --ERM12864DNS-2](http://www.buydisplay.com/default/graphic-display/128x64-dots?cotroller_ic=470)
 
 The GLCD2USB features 16 firmware configurable interface lines (AVR ports A and C) which will allow to connect the GLCD2USB to virtually any intelligent graphic display out there. However, currently only a hardware design and a firmware for certain ks0108 based displays have been developed. Further hardware versions with a matching firmware solution may support other controllers as well.
 
 ### Required parts
 
-You can get all parts in germany from Reichelt or Conrad:
+You can get all parts in germany from Reichelt or Conrad. Or in APAC from Element14.    
 
- Part | Qty | Name | [Reichelt](http://www.reichelt.de) | [Conrad](http://www.conrad.de) | [Maplin UK](http://www.maplin.co.uk) 
- ---- | ---- | ---- | ---- | ---- | ----
- Q1 | 1 | 16Mhz crystal, HC49U package | 16,0000-HC49U-S | 155145 | RR89W 
- R1 | 1 | 2.2k ohm resistor | 1/4W 2,2k | 403270 | M2K2 
- R2, R3 | 2 | 68 ohm resistor | 1/4W 68 | 403113 | M68R 
- R4 | 1 | 47 ohm resistor | 1/4W 47 | 403091 | M47R 
- R5 | 1 | 220 ohm resistor | 1/4W 220 | 403172 | M220R 
- R6 | 1 | 4.7k ohm resistor | 1/4W 4,7k | 403334 | M4K7 
- C1, C2 | 2 | 22pF ceramic capacitor, 2.54mm | KERKO 22P | 457167 | RA34M 
- C3, C5 | 2 | 100nF capacitor, 5.08mm | X7R-5 100N | 453358 | RA49D 
- C6 | 1 | 10μF electrolytic capacitor | RAD 10/35 | 472484 | AT98G 
- T1 | 1 | BC547C transistor | BC 547C | 154989 | QQ14Q 
- S1, S2, S3, S4 | 4 | push button | TASTER 9305 | 700460 | KR89W 
- SV1 | 1 | 10 pin ISP connector | WSL 10W | 742365 | JB85G 
- JP1 | - | serial connector, for debugging only | - | - | - 
- JP2 | 1 | display connector | BL 1X20G8 2,54 | 734993 | --- 
- -- | 1 | display side connector for JP2 | SL 1X36G 2,54 | 744018 | JW59P 
- LED1 | 1 | LED 3mm green | LED 3MM GN | 184713 | WL33L 
- X1 | 1 | mini USB-B print connector | USB BWM | ??? | --- 
- IC1 | 1 | Atmega16-16 DIP | ATMEGA 16-16 DIP | 154242 | --- 
- -- | 1 | socket for IC1 | GS 40P | 184882 | HQ38R 
- D1, D2 | 2 | 3.6V zener diode | ZF 3,6 | 180050 | QH03D 
- R7 | 1 | 10k precision variable resistor | 962-20 10K | 425109 | WR49D 
- -- | 1 | Display | LCD 128X064 BL, LCD 64128A LED | 187429, 187433 | --- 
+ Part | Qty | Name | [Reichelt](http://www.reichelt.de) | [Conrad](http://www.conrad.de) | [Maplin UK](http://www.maplin.co.uk) | [Element14](http://element14.com)
+ ---- | ---- | ---- | ---- | ---- | ---- | ----
+ Q1 | 1 | 16Mhz crystal, HC49U package | 16,0000-HC49U-S | 155145 | RR89W | 1701139
+ R1 | 1 | 2.2k ohm resistor | 1/4W 2,2k | 403270 | M2K2 | 1127929
+ R2, R3 | 2 | 68 ohm resistor | 1/4W 68 | 403113 | M68R | 1128049
+ R4 | 1 | 47 ohm resistor | 1/4W 47 | 403091 | M47R | 1126986
+ R5 | 1 | 220 ohm resistor | 1/4W 220 | 403172 | M220R | 1128007
+ R6 | 1 | 4.7k ohm resistor | 1/4W 4,7k | 403334 | M4K7 | 1128937
+ C1, C2 | 2 | 22pF ceramic capacitor, 2.54mm | KERKO 22P | 457167 | RA34M | 1600966
+ C3, C5 | 2 | 100nF capacitor, 5.08mm | X7R-5 100N | 453358 | RA49D | 1600820
+ C6 | 1 | 10μF electrolytic capacitor | RAD 10/35 | 472484 | AT98G | 1823702
+ T1 | 1 | BC547C transistor | BC 547C | 154989 | QQ14Q | 2453321
+ S1, S2, S3, S4 | 4 | push button | TASTER 9305 | 700460 | KR89W | 1712978
+ SV1 | 1 | 10 pin ISP connector | WSL 10W | 742365 | JB85G | 1298795
+ JP1 | - | serial connector, for debugging only | - | - | - | - 
+ JP2 | 1 | display connector | BL 1X20G8 2,54 | 734993 | --- | -
+ -- | 1 | display side connector for JP2 | SL 1X36G 2,54 | 744018 | JW59P | -
+ LED1 | 1 | LED 3mm green | LED 3MM GN | 184713 | WL33L | -
+ X1 | 1 | mini USB-B print connector | USB BWM | ??? | --- | -
+ IC1 | 1 | Atmega16-16 DIP | ATMEGA 16-16 DIP | 154242 | --- | 9171142
+ -- | 1 | socket for IC1 | GS 40P | 184882 | HQ38R | 4285669
+ D1, D2 | 2 | 3.6V zener diode | ZF 3,6 | 180050 | QH03D | 1861480
+ R7 | 1 | 10k precision variable resistor | 962-20 10K | 425109 | WR49D | 1141462
+ -- | 1 | Display | LCD 128X064 BL, LCD 64128A LED | 187429, 187433 | --- | -
 
 Additionally required: Display, Mini USB cable
 
@@ -65,19 +65,21 @@ The crystal should be in the small HC49U package. You can use a crystal in HC18 
 
 C1 and C2 should have their pins 2.54mm (1/10 inch) apart, C3 and C5 have their pins 5.08mm (2/10 inch) apart.
 
-Although T1 is labeled BC547C, a BC547A or BC547B will be fine as well.
+Although T1 is labeled BC547C, a BC547A or BC547B will be fine as well. Also tested working with a BC337
 
 If the backlight of the display draws more current than the 100mA the BC547 can handle a BC447 or BS170 may be used instead. I have not tested this and feedback is welcome. I have unknowingly been running the BC547 with a display drawing over 120mA without any problems, but using a transistor specified for the required current sure is a good idea.
 
+D1 and D2 must be 1/2w (500mA) or less. Otherwise you will encounter USB issues.
+
 ### Contrast voltage supply
 
-Some contrast voltage has to provided to bascially any LCD in order to generate readable output at a useful contrast. Without proper contrast voltage a LCD won't display anything. Unlike e.g. the HD44780 controllers used with the [LCD2USB](../lcd2usb), the KS0108 needs a negative contrast voltage. This is provided by the display controller itself and needs to be fed back into it. Since the AVR CPU can't easily work with negative voltages, the contrast is not software controlled but by the variable resisitor R7.
+Some contrast voltage has to provided to basically any LCD in order to generate readable output at a useful contrast. Without proper contrast voltage a LCD won't display anything. Unlike e.g. the HD44780 controllers used with the [LCD2USB](../lcd2usb), the KS0108 needs a negative contrast voltage. This is provided by the display controller itself and needs to be fed back into it. Since the AVR CPU can't easily work with negative voltages, the contrast is not software controlled but by the variable resistor R7.
 
 ### Backlight polarity
 
-Most of the 20 pin connector seems to be the same for many 128x64 ks0108 displays. But you should still carefully verify the pinout of the display you are going to use. One frequent difference between different displays seems to be the polarity of the backlighting. The GLCD2USB contains two SMD solder jumpers in the rear side below the programming connector. Please take care to close for the corrent polarity on your used by your display. Using the wrong polarity might damage the backlight of your display.
+Most of the 20 pin connector seems to be the same for many 128x64 ks0108 displays. But you should still carefully verify the pinout of the display you are going to use. One frequent difference between different displays seems to be the polarity of the backlighting. The GLCD2USB contains two SMD solder jumpers in the rear side below the programming connector. Please take care to close for the current polarity on your used by your display. Using the wrong polarity might damage the backlight of your display.
 
-If the backlights cathode (GND) is on pin 19 and the anode (VCC) is on pin 20 then the innermost SMD pads are to be connected as seen on the left image below. If the cathode of the displays backlight LED is on pin 19 and the anode on pin 20 then the both outermost SMD pads have to be connected with a small solder blob as seen on the right image below.
+If the backlights cathode (GND) is on pin 19 and the anode (VCC) is on pin 20 then the innermost SMD pads are to be connected as seen on the left image below. If the cathode of the displays backlight LED is on pin 20 and the anode on pin 19 then the both outermost SMD pads have to be connected with a small solder blob as seen on the right image below.
 
 ![](images/polarity1.jpg)  ![](images/polarity2.jpg)
 
@@ -109,6 +111,13 @@ If the firmware file named firmware.hex is to be uploaded to the Atmega16 using 
 avrdude -c usbasp -P usb -p atmega16 -U lfuse:w:0x9f:m -U hfuse:w:0xc9:m -U flash:w:firmware.hex 
 </pre>
 
+The [USB tiny ISP](https://learn.adafruit.com/usbtinyisp) programer also works.     
+Use the following syntax :
+
+<pre>
+avrdude -c usbtiny -P usb -p atmega16 -U lfuse:w:0x9f:m -U hfuse:w:0xc9:m -U flash:w:firmware.hex 
+</pre>
+
 This will install the firmware in the AVRs flash memory. Once the firmware is installed and the device is powered up, the LED on the GLCD2USB will be switched on and an attached display will display the demo screen (actual contents may vary with different firmware versions).
 
 ### Host driver software
@@ -128,6 +137,7 @@ Writing a driver for an unsupported display controller is faily easy if you have
 ## Links
 
   *   [LCD4LINUX, lcd interfacing for linux](http://ssl.bulix.org/projects/lcd4linux/)
+  *   [LCDproc, lcd interface for Linux](http://www.lcdproc.org)
   *   [AVR-USB, software USB for the AVR plattform](http://www.obdev.at/products/avrusb/index.html)
   *   [USB user space library libusb](http://libusb.sourceforge.net/)
   *   [Win32 port of libusb](http://libusb-win32.sourceforge.net/)

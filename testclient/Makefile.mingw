@@ -1,0 +1,21 @@
+#
+# Makefile.mingw
+#
+
+CC = i586-mingw32msvc-gcc
+CFLAGS = -O2 -Wall -DWIN32
+LIBS = -lhid -lsetupapi
+
+OBJ = main.obj usbcalls.obj
+APP = glcd2usb_test.exe
+
+all: $(APP)
+
+$(APP): $(OBJ)
+	$(CC) $(CFLAGS) -s -o $(APP) $(OBJ) $(LIBS)
+
+clean:
+	rm -f $(OBJ) $(APP)
+
+%.obj: %.c
+	$(CC) $(CFLAGS) -c $*.c -o $*.obj

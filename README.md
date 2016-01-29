@@ -93,6 +93,13 @@ Also keep in mind that the backlight is software controlled by the AVR CPU and t
 
 The GLCD2USB supports 4 user controllable buttons. The buttons states are reported to the host and can be used there for further processing. The GLCD2USB does not use the buttons by itself.
 
+### USB interface
+
+If you wish to solder a cable directly to the board the pin the pin out is like this :
+[![](images/usbpinout.jpg)](images/usbpinout.jpg)
+
+  
+
 ## Software
 
 The GLCD2USB consists of two software components: The firmware installed inside the device and a software driver installed on the controlling host.
@@ -143,6 +150,9 @@ The [glcd2usb example configuration](lcd4linux.conf) can be used as a basis for 
 #### LCDproc
 
 You need at least version 0.5.6.    
+Ensure your configure command contains "--enable-drivers=glcd" to enable support for GLCD2USB.    
+
+
 Ensure your LCDd.conf file has the following options set at a minimum.
 
 ```

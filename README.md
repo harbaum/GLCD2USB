@@ -95,7 +95,7 @@ The GLCD2USB supports 4 user controllable buttons. The buttons states are report
 
 ### USB interface
 
-If you wish to solder a cable directly to the board the pin the pin out is like this :
+If you wish to solder a cable directly to the board the pin the pin out is like this :       
 [![](images/usbpinout.jpg)](images/usbpinout.jpg)
 
   
